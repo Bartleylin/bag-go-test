@@ -10811,8 +10811,9 @@ html, body {
     position: absolute;
     left: 0;
     bottom: 11px;
+    left: 8px;
     background-color: #F5F5F4;
-    width: 100%;
+    width: calc(100% - 16px);
     height: 10px;
     border-radius: 12px;
   }
@@ -11356,7 +11357,7 @@ html, body {
   .detail-summary {
     background-color: white;
     width: 100%;
-    height: calc(100vh - 492px);
+    height: calc(100vh - 460px);
     overflow: auto;
   }
 }
@@ -12285,7 +12286,12 @@ html, body {
   width: 40%;
 }
 
-.bg-pos {
-  background-color: #ED7550;
+.bg-pos-title {
+  background-color: #F2A539;
   border-radius: 8px 8px 0px 0px;
+}
+
+.bg-pos-pay {
+  background-color: #252525;
+  color: white;
 }/*# sourceMappingURL=bag-go.css.map */
