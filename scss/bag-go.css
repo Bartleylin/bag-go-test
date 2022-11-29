@@ -11357,7 +11357,7 @@ html, body {
   .detail-summary {
     background-color: white;
     width: 100%;
-    height: calc(100vh - 460px);
+    height: calc(100vh - 468px);
     overflow: auto;
   }
 }
@@ -12275,7 +12275,7 @@ html, body {
 }
 
 .order-area-pos2 {
-  height: calc(100vh - 198px);
+  height: calc(100vh - 177px);
 }
 
 .menu-bar a {
