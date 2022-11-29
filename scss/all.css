@@ -10796,6 +10796,19 @@ html, body {
     border-radius: 12px;
   }
 }
+@media (min-width: 1200px) {
+  .order-bottom-line::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 33px;
+    background-color: #F5F5F4;
+    width: 100%;
+    height: 15px;
+    border-radius: 12px;
+  }
+}
 
 @media (min-width: 315px) {
   .nav-link.active {
@@ -11274,14 +11287,6 @@ html, body {
     background-color: white;
     width: 100%;
     height: 521px;
-    overflow: auto;
-  }
-}
-@media (min-width: 992px) {
-  .detail-summary {
-    background-color: white;
-    width: 100%;
-    height: 500px;
     overflow: auto;
   }
 }
@@ -12203,11 +12208,11 @@ html, body {
 }
 
 .order-area-pos {
-  height: calc(100vh - 325px);
+  height: calc(100vh - 243px);
 }
 
 .order-area-pos2 {
-  height: calc(100vh - 240px);
+  height: calc(100vh - 198px);
 }
 
 .menu-bar a {
@@ -12216,4 +12221,22 @@ html, body {
 
 .menu-bar-logo {
   width: 40%;
+}
+
+@media (min-width: 1200px) {
+  .detail-summary-pos button {
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .detail-summary-pos {
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 492px);
+    overflow: auto;
+  }
 }/*# sourceMappingURL=all.css.map */
