@@ -11290,6 +11290,14 @@ html, body {
     overflow: auto;
   }
 }
+@media (min-width: 992px) {
+  .detail-summary {
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 492px);
+    overflow: auto;
+  }
+}
 
 .detail-summary-content {
   width: 70%;
@@ -11314,14 +11322,6 @@ html, body {
     border: none;
     width: 40px;
     height: 40px;
-  }
-}
-@media (min-width: 1080px) {
-  .detail-summary button {
-    background-color: white;
-    border: none;
-    width: 48px;
-    height: 48px;
   }
 }
 
@@ -12221,22 +12221,4 @@ html, body {
 
 .menu-bar-logo {
   width: 40%;
-}
-
-@media (min-width: 1200px) {
-  .detail-summary-pos button {
-    background-color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .detail-summary-pos {
-    background-color: white;
-    width: 100%;
-    height: calc(100vh - 492px);
-    overflow: auto;
-  }
 }/*# sourceMappingURL=all.css.map */

@@ -727,6 +727,12 @@ html, body {
         height: 521px;
         overflow: auto;
         }
+    @media (min-width: 992px){
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 492px);
+        overflow: auto;
+        }
 }
 
 
@@ -751,13 +757,7 @@ html, body {
         border: none;
         width: 40px;
         height: 40px;
-        } 
-    @media (min-width: 1080px){
-        background-color: white;
-        border: none;
-        width: 48px;
-        height: 48px;
-        } 
+        }
 }
 
 .cancel-btn{
@@ -1561,22 +1561,4 @@ html, body {
 
 .menu-bar-logo{
     width: 40%;
-}
-
-.detail-summary-pos button{
-    @media (min-width: 1200px){
-        background-color: white;
-        border: none;
-        width: 40px;
-        height: 40px;
-        } 
-}
-
-.detail-summary-pos{
-    @media (min-width: 1200px){
-        background-color: white;
-        width: 100%;
-        height: calc(100vh - 492px);
-        overflow: auto;
-        }
 }
