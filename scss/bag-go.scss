@@ -3,7 +3,9 @@
 html, body {
     scroll-behavior: smooth;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 
 *,
 *::before,
@@ -792,10 +794,6 @@ html, body {
 .detail-summary-content{
     width: 70%;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;  // 控制多行的行數
-    -webkit-box-orient: vertical;
 }
 .detail-summary button{
     @media (min-width: 315px){
