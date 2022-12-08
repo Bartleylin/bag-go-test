@@ -691,6 +691,9 @@ body::-webkit-scrollbar {
 .detail-btn a{
     text-decoration: none !important;
 }
+.detail-btn a:hover{
+    color: white;
+}
 .detail{
     @media (min-width: 315px){
         background-color: white;
@@ -819,6 +822,9 @@ body::-webkit-scrollbar {
         width: 45px;
         height: 45px;
         }    
+}
+.detail-summary a{
+    text-decoration: none;
 }
 
 .cancel-btn{
