@@ -812,6 +812,13 @@ body::-webkit-scrollbar {
         width: 40px;
         height: 40px;
         }
+    @media (min-width: 1200px){
+        background-color: #ED7550;
+        border-radius: 6px;
+        border: none;
+        width: 45px;
+        height: 45px;
+        }    
 }
 
 .cancel-btn{

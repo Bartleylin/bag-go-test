@@ -11392,6 +11392,15 @@ body::-webkit-scrollbar {
     height: 40px;
   }
 }
+@media (min-width: 1200px) {
+  .detail-summary button {
+    background-color: #ED7550;
+    border-radius: 6px;
+    border: none;
+    width: 45px;
+    height: 45px;
+  }
+}
 
 .cancel-btn {
   width: 100%;
