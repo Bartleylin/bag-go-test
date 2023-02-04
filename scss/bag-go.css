@@ -11246,6 +11246,10 @@ body::-webkit-scrollbar {
   text-decoration: none !important;
 }
 
+.detail-btn a:hover {
+  color: white;
+}
+
 @media (min-width: 315px) {
   .detail {
     background-color: white;
@@ -12083,7 +12087,7 @@ body::-webkit-scrollbar {
 }
 
 .modal-backdrop {
-  z-index: -5;
+  z-index: 1054;
 }
 
 .phone-order .customization-edit {
@@ -12195,8 +12199,8 @@ body::-webkit-scrollbar {
 }
 .phone-coupon-popup .modal {
   position: fixed;
-  top: 20%;
-  left: 25%;
+  top: 15%;
+  left: 20%;
   z-index: 1055;
   display: none;
   width: 100%;
