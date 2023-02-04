@@ -687,9 +687,6 @@ body::-webkit-scrollbar {
 .detail-btn a{
     text-decoration: none !important;
 }
-.detail-btn a:hover{
-    color: white;
-}
 .detail{
     @media (min-width: 315px){
         background-color: white;
@@ -1416,7 +1413,7 @@ body::-webkit-scrollbar {
 }
 
 .modal-backdrop{
-    z-index: 1054;
+    z-index: -5;
 }
 
 .phone-order .customization-edit{
@@ -1522,8 +1519,8 @@ body::-webkit-scrollbar {
     }
     .modal{
         position: fixed;
-        top: 15%;
-        left: 20%;
+        top: 20%;
+        left: 25%;
         z-index: 1055;
         display: none;
         width: 100%;
@@ -1688,84 +1685,3 @@ body::-webkit-scrollbar {
     }
 }
 
-.customization-flex-gap {
-    @media (min-width: 315px){
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-}
-
-.customization-btn{
-    @media (min-width: 315px){
-        background-color: #F2F2F1;
-        border-radius: 6px;
-        border: none;
-        color: #011A2C;
-        position: relative;
-        width: calc(50% - 0.5rem);
-    }
-    @media (min-width: 576px){
-        background-color: #F2F2F1;
-        border-radius: 8px;
-        border: none;
-        color: #011A2C;
-        position: relative;
-        width: calc(33% - 0.66667rem);
-    }
-    @media (min-width: 768px){
-        background-color: #F2F2F1;
-        border-radius: 12px;
-        border: none;
-        color: #011A2C;
-        position: relative;
-        width: calc(13% - 0.75em);
-        min-height: 70px;
-    }
-}
-
-.customization-btn-active {
-    @media (min-width: 315px){
-        background-color: #ED7550;
-        border-radius: 6px;
-        border: none;
-        color: white;
-        width: calc(50% - 0.5rem);
-    }
-    @media (min-width: 576px){
-        background-color: #ED7550;
-        border-radius: 8px;
-        border: none;
-        color: white;
-        width: calc(33% - 0.666667rem);
-    }
-    @media (min-width: 768px){
-        background-color: #ED7550;
-        border-radius: 12px;
-        border: none;
-        color: white;
-        width: calc(13% - 0.75em);
-        min-height: 70px;
-    }
-}
-
-.customization-btn .sold-out{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #404040;
-    opacity: 0.9;
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    @media (min-width: 768px){
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #404040;
-        opacity: 0.9;
-        width: 100%;
-        height: 100%;
-        border-radius: 12px;
-    }
-}
