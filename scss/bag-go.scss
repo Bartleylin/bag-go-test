@@ -265,7 +265,7 @@ body::-webkit-scrollbar {
     }
 }
 
-/*
+
 .order-bottom-line{
     @media (min-width: 315px){
         &::before{
@@ -366,7 +366,6 @@ body::-webkit-scrollbar {
         }
     }
 }
-*/
 
 .active2{
     @media (min-width: 315px){
@@ -416,7 +415,7 @@ body::-webkit-scrollbar {
         border: 0;
         border-radius: 12px;
     }
-    @media (min-width: 1200px){
+    @media (min-width: 768px){
         background-color: #F5F5F4;
         border: 0;
         border-radius: 8px;
@@ -442,9 +441,6 @@ body::-webkit-scrollbar {
     }
     @media (min-width: 576px){
         border-radius: 8px !important;
-    }
-    @media (min-width: 1200px){
-        border-radius: 6px !important;
     }
 }
 .card-body{
@@ -691,9 +687,6 @@ body::-webkit-scrollbar {
 .detail-btn a{
     text-decoration: none !important;
 }
-.detail-btn a:hover{
-    color: white;
-}
 .detail{
     @media (min-width: 315px){
         background-color: white;
@@ -791,7 +784,7 @@ body::-webkit-scrollbar {
     @media (min-width: 992px){
         background-color: white;
         width: 100%;
-        height: calc(100vh - 460px);
+        height: calc(100vh - 470px);
         overflow: auto;
         }
 }
@@ -815,16 +808,6 @@ body::-webkit-scrollbar {
         width: 40px;
         height: 40px;
         }
-    @media (min-width: 1200px){
-        background-color: #ED7550;
-        border-radius: 6px;
-        border: none;
-        width: 45px;
-        height: 45px;
-        }    
-}
-.detail-summary a{
-    text-decoration: none;
 }
 
 .cancel-btn{
@@ -1015,6 +998,12 @@ body::-webkit-scrollbar {
         border: none;
         width: calc(50% - 16px);
     }
+    @media (min-width: 1200px){
+        background-color: #F2F2F1;
+        border-radius: 8px;
+        border: none;
+        width: calc(50% - 16px);
+    }
 }
 .payment-back{
     @media (min-width: 315px){
@@ -1027,6 +1016,13 @@ body::-webkit-scrollbar {
     @media (min-width: 768px){
         background-color: #ED7550;
         border-radius: 12px;
+        border: none;
+        color: white;
+        width: calc(50% - 16px);
+    }
+    @media (min-width: 1200px){
+        background-color: #ED7550;
+        border-radius: 8px;
         border: none;
         color: white;
         width: calc(50% - 16px);
@@ -1071,6 +1067,11 @@ body::-webkit-scrollbar {
         background-color: white;
         border-radius: 10px;
         border: 20px solid #F2A54C;
+    }
+    @media (min-width: 1200px){
+        background-color: white;
+        border-radius: 8px;
+        border: 0px solid #F2A54C;
     }
 }
 .total-amount-content-tittle{
@@ -1412,7 +1413,7 @@ body::-webkit-scrollbar {
 }
 
 .modal-backdrop{
-    z-index: 1050;
+    z-index: -5;
 }
 
 .phone-order .customization-edit{
@@ -1530,8 +1531,8 @@ body::-webkit-scrollbar {
     }
     .modal-dialog {
         @media (min-width: 315px){
-            max-width: 50%;
-            max-height: 50%;
+            max-width: 60%;
+            max-height: 60%;
             }
     }
     .popup-cancel{
@@ -1619,7 +1620,7 @@ body::-webkit-scrollbar {
 }
 
 .order-area-pos{
-    height:calc(100vh - 180px);
+    height:calc(100vh - 70px);
 }
 .order-area-pos2{
     height:calc(100vh - 177px);
@@ -1633,6 +1634,10 @@ body::-webkit-scrollbar {
     width: 40%;
 }
 
+.pos-member{
+    background-color: #6E6E6E;
+}
+
 .bg-pos-title{
     background-color: #F2A539;
     border-radius: 8px 8px 0px 0px;
@@ -1641,8 +1646,6 @@ body::-webkit-scrollbar {
     background-color: #252525;
     color : white;
 }
-
-
 
 .btn-check:active .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
     color: #fff;
@@ -1654,13 +1657,112 @@ body::-webkit-scrollbar {
     border-color: #ED7550;
 }
 
-::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
+.credit-card-pos{
+    @media (min-width: 1200px){
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        position: relative;
+    }
 }
-::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
+.cash-pos{
+    @media (min-width: 1200px){
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        position: relative;
+    }
+}
+.Anther-Payment-pos{
+    @media (min-width: 1200px){
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        position: relative;
+    }
+}
+
+.customization-flex-gap {
+    @media (min-width: 315px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+.customization-btn{
+    @media (min-width: 315px){
+        background-color: #F2F2F1;
+        border-radius: 6px;
+        border: none;
+        color: #011A2C;
+        position: relative;
+        width: calc(50% - 0.5rem);
+    }
+    @media (min-width: 576px){
+        background-color: #F2F2F1;
+        border-radius: 8px;
+        border: none;
+        color: #011A2C;
+        position: relative;
+        width: calc(33% - 0.66667rem);
+    }
+    @media (min-width: 768px){
+        background-color: #F2F2F1;
+        border-radius: 12px;
+        border: none;
+        color: #011A2C;
+        position: relative;
+        width: calc(13% - 0.75em);
+        min-height: 70px;
+    }
+}
+
+.customization-btn-active {
+    @media (min-width: 315px){
+        background-color: #ED7550;
+        border-radius: 6px;
+        border: none;
+        color: white;
+        width: calc(50% - 0.5rem);
+    }
+    @media (min-width: 576px){
+        background-color: #ED7550;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        width: calc(33% - 0.666667rem);
+    }
+    @media (min-width: 768px){
+        background-color: #ED7550;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        width: calc(13% - 0.75em);
+        min-height: 70px;
+    }
+}
+
+.customization-btn .sold-out{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #404040;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    @media (min-width: 768px){
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #404040;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
 }
