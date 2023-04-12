@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS</title>
+    <link rel="stylesheet" href="scss/bag-go.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-white shadow-sm">
+            <div class="col-12 sticky-top">
+                <div class="row menu-bar py-2 align-items-center justify-content-between">
+                    <div class="col-2">
+                        <img src="image/Artribr.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <div class="pos-funtion">
+                            <div class="detail-btn d-flex align-items-center justify-content-between">
+                                <a class="pos-btn p-2 d-flex align-items-center justify-content-center active2" href="index.html">
+                                    <p class="fs-5 mb-0 text-nowrap">
+                                        點餐
+                                    </p>
+                                </a>
+                                <a class="pos-btn p-2 d-flex align-items-center justify-content-center" href="orde-search.html">
+                                    <p class="fs-5 mb-0 text-nowrap">
+                                        查詢訂單
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-white order-area-pos overflow-auto">
+                <nav class="navbar navbar-light mt-2">
+                    <ul class="nav nav-pills flex-column w-100">
+                        <li class="nav-item mb-3">
+                            <a class="nav-link py-3" href="#scrollspyHeading1">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <p class="mb-0 fs-5 text-wrap">現金</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a class="nav-link py-3" href="#scrollspyHeading2">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <p class="mb-0 fs-5 text-wrap">信用卡</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a class="nav-link py-3 active2" href="#scrollspyHeading3">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <p class="mb-0 fs-5 text-wrap">其他支付</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-7 bg-light py-3">
+                <nav>
+                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                        <button class="nav-link2 active w-100" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                            <p class="fs-4 mb-0">付款</p>
+                        </button>
+                        <button class="nav-link2 w-100" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <p class="fs-4 mb-0">優惠</p>
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content bg-white" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row p-3">
+                            <a class="col-4 mb-3">
+                                <img class="w-100 border border-1 rounded shadow-sm" src="image/pay-ment-img/easy wallet.png">
+                            </a>
+                            <a class="col-4 mb-3">
+                                <img class="w-100 border border-1 rounded shadow-sm" src="image/pay-ment-img/ipass.png">
+                            </a>
+                            <a class="col-4 mb-3">
+                                <img class="w-100 border border-1 rounded shadow-sm" src="image/pay-ment-img/line pay.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade bg-white" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row p-3 align-items-center">
+                            <div class="col-9">
+                                <div class="d-flex cal-gap cal-btns">
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            7
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            8
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            9
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            4
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            5
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            6
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            1
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            2
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            3
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            C
+                                        </p>
+                                    </a>
+                                    <a class="cal-btn2 d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            0
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-flex flex-column cal-gap cal-hot-btns">
+                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            10%
+                                        </p>
+                                    </a>
+                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            20%
+                                        </p>
+                                    </a>
+                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            30%
+                                        </p>
+                                    </a>
+                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                        <p class="fs-4 mb-0 text-nowrap">
+                                            50%
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-12 valuation-box p-3 mt-3 bg-white text-decoration-none">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="fs-5 mb-0 text-secondary">已收金額：</p>
+                            <p class="fs-5 mb-0 text-secondary">輸入金額</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="fs-5 mb-0 text-secondary">折扣金額：</p>
+                            <p class="fs-5 mb-0 text-secondary">NT$100</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="fs-5 mb-0 text-secondary">應收金額：</p>
+                            <p class="fs-5 mb-0 text-secondary">NT$1080</p>
+                        </div>
+                        <div class="detail-page-line my-2"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="fs-4 fw-bold mb-0 text-color2">支付：</p>
+                            <p class="fs-4 fw-bold mb-0 text-color2">等待感應</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-3 bg-light py-3">
+                <div class="align-items-stretch">
+                    <div class="detail h-100">
+                        <div class="p-3 d-flex justify-content-center align-items-center" role="group" aria-label="Basic radio toggle button group">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="fs-4 mb-0 text-secondary">內用：</p>
+                                <p class="fs-4 mb-0 text-secondary">＃12345678</p>
+                            </div>
+                        </div>
+                        <div class="detail-page-line"></div>
+                        <div class="payment-summary d-flex flex-column px-3">
+                            <div class="d-flex align-items-center justify-content-between my-3">
+                                <p class="fs-5 mb-0">布朗尼 x1</p>
+                            </div>
+                            <div class="d-flex flex-row-reverse align-items-center my-3">
+                                <div>
+                                    <p class="fs-5 mb-0">NT $80</p>
+                                </div>
+                            </div>
+                            <div class="detail-page-line clearfix"></div>
+                            <div class="d-flex align-items-center justify-content-between my-3">
+                                <p class="fs-5 mb-0">經典火鍋 x2</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="fs-5 mb-0 text-secondary detail-summary-content">大辣。肉品加量。板條。小辣。
+                                    金針菇。木耳。大陸妹。魚餃。燕餃。
+                                    貢丸。米血。凍豆腐。</p>
+                            </div>
+                            <div class="d-flex flex-row-reverse align-items-center my-3">
+                                <div>
+                                    <p class="fs-5 mb-0">NT $500</p>
+                                </div>
+                            </div>
+                            <div class="detail-page-line"></div>
+                            <div class="d-flex align-items-center justify-content-between py-1 py-md-3">
+                                <p class="fs-5 mb-0">經典火鍋 x2</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="fs-5 mb-0 text-secondary detail-summary-content">大辣。肉品加量。板條。小辣。
+                                    金針菇。木耳。大陸妹。魚餃。燕餃。
+                                    貢丸。米血。凍豆腐。</p>
+                            </div>
+                            <div class="d-flex flex-row-reverse align-items-center my-3">
+                                <div>
+                                    <p class="fs-5 mb-0">NT $500</p>
+                                </div>
+                            </div>
+                            <div class="detail-page-line"></div>
+                            <div class="d-flex align-items-center justify-content-between py-1 py-md-3">
+                                <p class="fs-5 mb-0">經典火鍋 x2</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="fs-5 mb-0 text-secondary detail-summary-content">大辣。肉品加量。板條。小辣。
+                                    金針菇。木耳。大陸妹。魚餃。燕餃。
+                                    貢丸。米血。凍豆腐。</p>
+                            </div>
+                            <div class="d-flex flex-row-reverse align-items-center my-3">
+                                <div>
+                                    <p class="fs-5 mb-0">NT $500</p>
+                                </div>
+                            </div>
+                            <div class="detail-page-line"></div>
+                            <div class="d-flex align-items-center justify-content-between py-1 py-md-3">
+                                <p class="fs-5 mb-0">經典火鍋 x2</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="fs-5 mb-0 text-secondary detail-summary-content">大辣。肉品加量。板條。小辣。
+                                    金針菇。木耳。大陸妹。魚餃。燕餃。
+                                    貢丸。米血。凍豆腐。</p>
+                            </div>
+                            <div class="d-flex flex-row-reverse align-items-center my-3">
+                                <div>
+                                    <p class="fs-5 mb-0">NT $500</p>
+                                </div>
+                            </div>
+                            <div class="detail-page-line"></div>
+                        </div>
+                        <div class="detail-page-line"></div>
+                        <div class="d-flex flex-column p-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a class="pos-cancel w-25 px-2 py-3 p-md-3 me-3 d-flex align-items-center justify-content-center" href="index.html">
+                                    <p class="fs-7 mb-0 text-nowrap fw-bold">
+                                        取消
+                                    </p>
+                                </a>
+                                <a class="pos-pay w-75 px-2 py-3 p-md-3 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                    <p class="fs-7 mb-0 text-nowrap fw-bold">
+                                        結帳
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--結帳確認-->
+    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content shadow phone-coupon-popup border-0">
+            <div class="modal-header">
+                <p class="modal-title fs-5 fw-bold" id="exampleModalLabel">確認結帳<p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center justify-content-center">
+                <p class="modal-title fs-5 fw-bold" id="exampleModalLabel">請確認已完成付款<p>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <button type="button" class="popup-cancel" data-bs-dismiss="modal">
+                        <p class="fs-5 mb-0 text-secondary py-2">取消</p>
+                    </button>
+                    <button type="button" class="popup-enter" onclick="location.href='index.html'">
+                        <p class="fs-5 mb-0 py-2">確認</p>
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

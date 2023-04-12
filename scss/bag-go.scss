@@ -13,7 +13,13 @@ body::-webkit-scrollbar {
  box-sizing: border-box;
 }
 
-
+.txt-line-clamp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
 
 .fs-1{
     @media (min-width: 315px){
@@ -265,6 +271,27 @@ body::-webkit-scrollbar {
     }
 }
 
+.nav-link2{
+    @media (min-width: 992px){
+        background-color: transparent;
+        border-color: #dee2e6 #dee2e6 #fff;
+        border-radius: 12px 12px 0px 0px;
+        text-decoration:none;
+        position: relative;
+        border: 1px solid transparent;
+    }
+}
+.nav-link2.active{
+    @media (min-width: 992px){
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+        border-radius: 12px 12px 0px 0px;
+        text-decoration:none;
+        position: relative;
+        border: 1px solid transparent;
+    }
+}
+
 
 .order-bottom-line{
     @media (min-width: 315px){
@@ -310,62 +337,7 @@ body::-webkit-scrollbar {
 }
 
 
-.nav-link.active{
-    @media (min-width: 315px){
-        background-color: #F5F5F4;
-        border-radius: 6px;
-        color: black;
-        text-decoration:none;
-        position: relative;
-        &::before{
-            content:"";
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: -14px;
-            background-color:  #ED7550;
-            width: 100%;
-            height: 6px;
-            border-radius: 6px;
-        }
-    }
-    @media (min-width: 768px){
-        background-color: #F5F5F4;
-        border-radius: 12px;
-        color: black;
-        text-decoration:none;
-        position: relative;
-        &::before{
-            content:"";
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: -38px;
-            background-color:  #ED7550;
-            width: 100%;
-            height: 15px;
-            border-radius: 12px;
-        }
-    }
-    @media (min-width: 1200px){
-        background-color: #F5F5F4;
-        border-radius: 12px;
-        color: black;
-        text-decoration:none;
-        position: relative;
-        &::before{
-            content:"";
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: -20px;
-            background-color:  #ED7550;
-            width: 100%;
-            height: 10px;
-            border-radius: 8px;
-        }
-    }
-}
+
 
 .active2{
     @media (min-width: 315px){
@@ -620,12 +592,8 @@ body::-webkit-scrollbar {
 
 
 .customization-edit{
-    @media (min-width: 315px){
-        height: 200px;
-        overflow: auto;
-    }
-    @media (min-width: 768px){
-        height: 600px;
+    @media (min-width: 1366px){
+        height:calc(100vh - 185px);
         overflow: auto;
     }
 }
@@ -688,16 +656,12 @@ body::-webkit-scrollbar {
     text-decoration: none !important;
 }
 .detail-btn a:hover{
-    color: white;
+    color:#707070;
 }
 .detail{
     @media (min-width: 315px){
         background-color: white;
         border-radius: 6px;
-        }
-    @media (min-width: 315px){
-        background-color: white;
-        border-radius: 12px;
         }
     @media (min-width: 1200px){
         background-color: white;
@@ -772,39 +736,35 @@ body::-webkit-scrollbar {
 }
 
 .detail-summary{
-    @media (min-width: 315px){
-        background-color: white;
-        width: 100%;
-        height: 200px;
-        overflow: auto;
-        }
-    @media (min-width: 768px){
-        background-color: white;
-        width: 100%;
-        height: 521px;
-        overflow: auto;
-        }
     @media (min-width: 992px){
         background-color: white;
         width: 100%;
-        height: calc(100vh - 470px);
+        height: calc(100vh - 440px);
         overflow: auto;
         }
 }
-
-
+.detail-summary-edit{
+    @media (min-width: 992px){
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 460px);
+        overflow: auto;
+        }
+}
 
 .detail-summary-content{
     width: 70%;
     overflow: hidden;
 }
 .detail-summary button{
-    @media (min-width: 315px){
+    @media (min-width: 768px){
         background-color: white;
         border: none;
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
         }
+}
+.detail-summary-edit button{
     @media (min-width: 768px){
         background-color: white;
         border: none;
@@ -1416,7 +1376,7 @@ body::-webkit-scrollbar {
 }
 
 .modal-backdrop{
-    z-index: 1054;
+    z-index: -1;
 }
 
 .phone-order .customization-edit{
@@ -1522,20 +1482,14 @@ body::-webkit-scrollbar {
     }
     .modal{
         position: fixed;
-        top: 15%;
+        top: auto;
         left: 20%;
         z-index: 1055;
-        display: none;
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
-        outline: 0;
     }
     .modal-dialog {
         @media (min-width: 315px){
-            max-width: 60%;
-            max-height: 60%;
+            min-width: 60%;
+            min-height: 60%;
             }
     }
     .popup-cancel{
@@ -1623,33 +1577,45 @@ body::-webkit-scrollbar {
 }
 
 .order-area-pos{
-    height:calc(100vh - 70px);
+    height:calc(100vh - 90px);
 }
 .order-area-pos2{
-    height:calc(100vh - 177px);
+    height:calc(100vh - 175px);
 }
 
+.menu-bar img{
+    height: 5%;
+}
 .menu-bar a{
     color: #707070;
 }
 
-.menu-bar-logo{
-    width: 40%;
-}
-
-.pos-member{
-    background-color: #6E6E6E;
+.pos-member a {
+    color: #011A2C;
 }
 
 .bg-pos-title{
     background-color: #F2A539;
     border-radius: 8px 8px 0px 0px;
 }
-.bg-pos-pay{
+.pos-pay{
     background-color: #252525;
+    border-radius: 6px;
+    color : white;
+    text-decoration: none;
+}
+.pos-pay:hover{
     color : white;
 }
-
+.pos-cancel{
+    background-color: #6E6E6E;
+    border-radius: 6px;
+    color : white;
+    text-decoration: none;
+}
+.pos-cancel:hover{
+    color : white;
+}
 .btn-check:active .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
     color: #fff;
     background-color: #ED7550;
@@ -1719,7 +1685,7 @@ body::-webkit-scrollbar {
         border: none;
         color: #011A2C;
         position: relative;
-        width: calc(13% - 0.75em);
+        width: 20%;
         min-height: 70px;
     }
 }
@@ -1744,7 +1710,7 @@ body::-webkit-scrollbar {
         border-radius: 12px;
         border: none;
         color: white;
-        width: calc(13% - 0.75em);
+        width: 20%;
         min-height: 70px;
     }
 }
@@ -1771,5 +1737,135 @@ body::-webkit-scrollbar {
 }
 
 .img-fit{
-    object-fit: cover
+    object-fit: cover;
+}
+
+
+.order-summary{
+    @media (min-width: 992px){
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 415px);
+        overflow: auto;
+        }
+}
+
+.payment-summary {
+    @media (min-width: 768px){
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 295px);
+        overflow: auto;
+        }
+    @media (min-width: 992px){
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 320px);
+        overflow: auto;
+        }    
+}
+
+.payment-summary button{
+    @media (min-width: 768px){
+        background-color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        }
+}
+
+
+.cal-gap {
+    @media (min-width: 315px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+.cal-btn{
+    @media (min-width: 768px){
+        background-color: #F2F2F1;
+        border-radius: 12px;
+        border: none;
+        color: #011A2C;
+        position: relative;
+        width: 30%;
+        min-height: 80px;
+    }
+}
+.cal-btn2{
+    @media (min-width: 768px){
+        background-color: #F2F2F1;
+        border-radius: 12px;
+        border: none;
+        color: #011A2C;
+        position: relative;
+        width: 64%;
+        min-height: 80px;
+    }
+}
+
+.cal-btns a:active{
+    @media (min-width: 768px){
+        background-color: #ED7550;
+        border-radius: 12px;
+        border: none;
+        color: white;
+    }
+}
+.cal-btns a{
+    text-decoration: none;
+    color: #011A2C;
+}
+
+.cal-hot-btn{
+    @media (min-width: 768px){
+        background-color: #ED7550;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        position: relative;
+        width: 100%;
+        min-height: 80px;
+    }
+}
+
+.cal-hot-btns a:active{
+    @media (min-width: 768px){
+        background-color: #6E6E6E;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        width: 100%;
+        min-height: 80px;
+    }
+}
+.cal-hot-btns a{
+    text-decoration: none;
+    color: white;
+}
+
+.order-click{
+    border: 4px solid white;
+    border-radius: 8px;
+    background: white;
+}
+.order-click:active{
+    border: 4px solid #ED7550;
+    border-radius: 8px;
+    background: white;
+}
+
+.order-eatin{
+    background-color: #AFAFAF;
+    color: white;
+}
+.order-eatin:active{
+    background-color: #ED7550;
+    color: white;
+}
+
+.offcanvas-start {
+    width: 75%;
 }
