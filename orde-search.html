@@ -9,27 +9,21 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row bg-white shadow-sm">
-            <div class="col-12 sticky-top">
-                <div class="row menu-bar py-2 align-items-center justify-content-between">
-                    <div class="col-2">
-                        <img src="image/Artribr.svg" alt="">
-                    </div>
-                    <div class="col-3">
-                        <div class="pos-funtion">
-                            <div class="detail-btn d-flex align-items-center justify-content-between">
-                                <a class="pos-btn p-2 d-flex align-items-center justify-content-center active2" href="index.html">
-                                    <p class="fs-5 mb-0 text-nowrap">
-                                        點餐
-                                    </p>
-                                </a>
-                                <a class="pos-btn p-2 d-flex align-items-center justify-content-center" href="orde-search.html">
-                                    <p class="fs-5 mb-0 text-nowrap">
-                                        查詢訂單
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-12 d-flex sticky-top menu-bar align-items-center justify-content-between">
+                <img src="image/logo-main.svg" class="logo">
+                <div class="pos-funtion">
+                    <div class="detail-btn d-flex align-items-center justify-content-between">
+                        <a class="menu-btn p-2 d-flex align-items-center justify-content-center active2" href="index.html">
+                            <p class="fs-5 mb-0 text-nowrap">
+                                點餐
+                            </p>
+                        </a>
+                        <a class="menu-btn p-2 d-flex align-items-center justify-content-center" href="orde-search.html">
+                            <p class="fs-5 mb-0 text-nowrap">
+                                查詢訂單
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -37,7 +31,7 @@
         <div class="row bg-light">
             <div class="col-9 px-4">
                 <div class="bg-light position-sticky">
-                    <div class="p-3 order-fix">
+                    <div class="py-3">
                         <div class="row align-items-center justify-content-between">
                             <div class="col-3">
                                 <div class="pos-funtion">
@@ -64,7 +58,7 @@
                     </div>
                 </div>
                 <div class="order-area-pos2 overflow-auto">
-                    <div class="order-click shadow mb-3">
+                    <div class="order-click-active shadow mb-3">
                         <div class="px-4">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div>
@@ -80,8 +74,35 @@
                         </div>
                         <div class="d-flex align-items-center justify-content-between px-4">
                             <div class="d-flex align-items-center">
-                                <div class="d-flex align-items-center justify-content-center rounded px-3 py-2 me-3 order-eatin">
-                                    <p class="subtitle-text fs-5 mb-0">內用</p>
+                                <div class="d-flex align-items-center justify-content-center order-eatin">
+                                    <a class="subtitle-text rounded px-3 py-2 me-3 fs-5 mb-0 active">內用</a>
+                                </div>
+                                <p class="fs-5 mb-0 me-3">桌號 : 2</p>
+                                <p class="fs-5 mb-0 me-3">品項７</p>
+                            </div>
+                            <div class="py-2">
+                                    <p class="fs-4 mb-0 fw-bold">NT$ 2,800</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-click shadow mb-3">
+                        <div class="px-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <p class="subtitle-text fs-7 mb-0 fw-bold">訂單編號 : #0002</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="subtitle-text fs-5 mb-0">2023/02/24</p>
+                                        <p class="subtitle-text fs-5 mb-0 ms-3">11:23 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between px-4">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center order-eatin">
+                                    <a class="subtitle-text rounded px-3 py-2 me-3 fs-5 mb-0">內用</a>
                                 </div>
                                 <p class="fs-5 mb-0 me-3">桌號 : 2</p>
                                 <p class="fs-5 mb-0 me-3">品項７</p>
@@ -93,9 +114,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 bg-light py-3">
-                <div class="detail">
-                    <div class="p-3 d-flex justify-content-center align-items-center" role="group" aria-label="Basic radio toggle button group">
+            <div class="col-3 bg-light py-3 order-area-pos">
+                <div class="detail d-flex flex-column h-100">
+                    <div class="detail-fixed p-3 d-flex justify-content-center align-items-center" role="group" aria-label="Basic radio toggle button group">
                         <div class="d-flex align-items-center justify-content-between">
                             <p class="fs-4 mb-0 text-secondary">內用：</p>
                             <p class="fs-4 mb-0 text-secondary">＃12345678</p>
@@ -128,7 +149,7 @@
                         <div class="detail-page-line"></div>
                     </div>
                     <div class="detail-page-line"></div>
-                    <div class="d-flex flex-column px-3">
+                    <div class="detail-fixed d-flex flex-column px-3">
                         <div class="d-flex align-items-center justify-content-between">
                             <p class="fs-5 mb-0 text-secondary">餐點金額：</p>
                             <p class="fs-5 mb-0 text-secondary">NT $1,080</p>
@@ -142,7 +163,7 @@
                             <p class="fs-5 mb-0">總金額：</p>
                             <p class="fs-5 mb-0">NT $1,088</p>
                         </div>
-                        <div class="d-flex align-items-center justify-content-between py-3 py-md-4">
+                        <div class="d-flex align-items-center justify-content-between py-3">
                             <a class="pos-pay w-100 px-2 py-3 p-md-3 d-flex align-items-center justify-content-center" href="order-edit.html">
                                 <p class="fs-7 mb-0 text-nowrap fw-bold">
                                     編輯訂單

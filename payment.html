@@ -9,27 +9,21 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row bg-white shadow-sm">
-            <div class="col-12 sticky-top">
-                <div class="row menu-bar py-2 align-items-center justify-content-between">
-                    <div class="col-2">
-                        <img src="image/Artribr.svg" alt="">
-                    </div>
-                    <div class="col-3">
-                        <div class="pos-funtion">
-                            <div class="detail-btn d-flex align-items-center justify-content-between">
-                                <a class="pos-btn p-2 d-flex align-items-center justify-content-center active2" href="index.html">
-                                    <p class="fs-5 mb-0 text-nowrap">
-                                        點餐
-                                    </p>
-                                </a>
-                                <a class="pos-btn p-2 d-flex align-items-center justify-content-center" href="orde-search.html">
-                                    <p class="fs-5 mb-0 text-nowrap">
-                                        查詢訂單
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-12 d-flex sticky-top menu-bar align-items-center justify-content-between">
+                <img src="image/logo-main.svg" class="logo">
+                <div class="pos-funtion">
+                    <div class="detail-btn d-flex align-items-center justify-content-between">
+                        <a class="menu-btn p-2 d-flex align-items-center justify-content-center active2" href="index.html">
+                            <p class="fs-5 mb-0 text-nowrap">
+                                點餐
+                            </p>
+                        </a>
+                        <a class="menu-btn p-2 d-flex align-items-center justify-content-center" href="orde-search.html">
+                            <p class="fs-5 mb-0 text-nowrap">
+                                查詢訂單
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -77,86 +71,116 @@
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row p-3 align-items-center">
                             <div class="col-9">
-                                <div class="d-flex cal-gap cal-btns">
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            7
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            8
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            9
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            4
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            5
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            6
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            1
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            2
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            3
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            C
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn2 d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            0
-                                        </p>
-                                    </a>
+                                <div class="row d-flex cal-btns g-3">
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                7
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                8
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                9
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                4
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                5
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                6
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                1
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                2
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                3
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                c
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                0
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-3">
-                                <div class="d-flex flex-column cal-gap cal-hot-btns">
-                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            50
-                                        </p>
-                                    </a>
-                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            100
-                                        </p>
-                                    </a>
-                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            500
-                                        </p>
-                                    </a>
-                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            1000
-                                        </p>
-                                    </a>
+                                <div class="row d-flex flex-column cal-hot-btns g-3">
+                                    <div class="col-12">
+                                        <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                50
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                100
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                500
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                1000
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -164,86 +188,116 @@
                     <div class="tab-pane fade bg-white" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <div class="row p-3 align-items-center">
                             <div class="col-9">
-                                <div class="d-flex cal-gap cal-btns">
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            7
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            8
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            9
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            4
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            5
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            6
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            1
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            2
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            3
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            C
-                                        </p>
-                                    </a>
-                                    <a class="cal-btn2 d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            0
-                                        </p>
-                                    </a>
+                                <div class="row d-flex cal-btns g-3">
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                7
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                8
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                9
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                4
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                5
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                6
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                1
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                2
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                3
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                c
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <a class="cal-btn d-flex align-items-center justify-content-center">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                0
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-3">
-                                <div class="d-flex flex-column cal-gap cal-hot-btns">
-                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            10%
-                                        </p>
-                                    </a>
-                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            20%
-                                        </p>
-                                    </a>
-                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            30%
-                                        </p>
-                                    </a>
-                                    <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
-                                        <p class="fs-4 mb-0 text-nowrap">
-                                            50%
-                                        </p>
-                                    </a>
+                                <div class="row d-flex flex-column cal-hot-btns g-3">
+                                    <div class="col-12">
+                                        <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                10%
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                20%
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                30%
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="cal-hot-btn d-flex py-2 flex-column align-items-center justify-content-center text-decoration-none">
+                                            <p class="fs-4 mb-0 text-nowrap">
+                                                50%
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -269,9 +323,9 @@
                         </div>
                     </div>
             </div>
-            <div class="col-3 bg-light py-3">
-                <div class="detail h-100">
-                    <div class="p-3 d-flex justify-content-center align-items-center">
+            <div class="col-3 bg-light py-3 order-area-pos">
+                <div class="detail d-flex flex-column h-100">
+                    <div class="detail-fixed p-3 d-flex justify-content-center align-items-center">
                         <div class="d-flex align-items-center justify-content-between">
                             <p class="fs-4 mb-0 text-secondary">內用：</p>
                             <p class="fs-4 mb-0 text-secondary">＃12345678</p>
@@ -346,7 +400,7 @@
                         <div class="detail-page-line"></div>
                     </div>
                     <div class="detail-page-line"></div>
-                    <div class="d-flex flex-column p-3">
+                    <div class="detail-fixed d-flex flex-column p-3">
                         <div class="d-flex align-items-center justify-content-between">
                             <a class="pos-cancel w-25 px-2 py-3 p-md-3 me-3 d-flex align-items-center justify-content-center" href="index.html">
                                 <p class="fs-7 mb-0 text-nowrap fw-bold">
